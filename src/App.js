@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { connect } from 'react-redux';
 import './App.css';
+import News from './components/news';
+import { Header } from './components/header';
+import { Main } from './container/main';
+import { Footer } from './components/footer';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Main />
+      <Footer />
+
+      <ul className="news-list">
+        {props.newsData.map((index, i) =>
+          <li key={i} ><News {...index}/></li>
+        )}
+      </ul>
     </div>
   );
 }
 
-export default App;
+export default connect(
+  state => ({
+    newsData: state,
+  }),
+  dispatch => ({})
+)(App);
