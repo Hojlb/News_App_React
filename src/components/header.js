@@ -6,5 +6,9 @@ export const Header = () =>
     <header>
       <h2>News App</h2>
       <Clock/>
+      {/*<form className="" autocomplete="on" onSubmit="findNews(); return false">*/}
+        {/*<input type="text" name="q" className="search" placeholder="Tramp" value=""/>*/}
+        {/*<input type="submit" name="" value="submit" className="submit-button"/>*/}
+      {/*</form>*/}
     </header>
   </React.Fragment>;

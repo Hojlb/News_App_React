@@ -8,27 +8,37 @@ html, body {
   background-color: #fff;
   color: #333;
   font-style: normal;
+  height: 100%;
 }
 
-header {
+header, footer {
   margin: 0 auto;
-  height: 60px;
+  height: 80px;
   background-color: #313139;
   color: #fff;
+}
+
+main {
+  min-height: calc(100vh - 180px);
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  min-height: 100%;
 }
 
 h2 {
   margin: 0 auto;
 }
 
-.App {
-  text-align: center;
-}
-
-.news-title {
-    max-height: 200px;
-    overflow: hidden;
-}
 
 .visually-hidden {
   position: absolute;
@@ -39,40 +49,18 @@ h2 {
   clip: rect(1px 1px 1px 1px);
   overflow: hidden;
 }
+
 .news-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
+  margin: 0 5px;
+  padding: 0;
 }
 
 .news-list li {
- list-style-type: none;
+  margin: 1em 1.5em;
+  list-style-type: none;
 }
 
-.news {
-  margin: 0 auto;
-  display: block;
-  box-sizing: border-box;
-  width: 400px;
-}
-
-.news::before {
-  content: "";
-  border-top: 1px solid black;
-  padding: 5px;
-  display: block;
-}
-
-.news-image {
-  height: calc(100vh - 450px);
-}
-
-figure {
-  margin: 0 auto;
-}
-
-.news article {
-  padding: 0 15px;
-}
