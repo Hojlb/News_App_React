@@ -1,11 +1,13 @@
-const C = {
-  ADD_NEWS: "ADD_NEWS",
-  RATE_NEWS: "RATE_NEWS",
-  INITIAL_STATE: "INITIAL_STATE",
-  UPDATE_NEWS: "UPDATE_NEWS",
-  DOWNLOAD_FRESH_NEWS: "DOWNLOAD_FRESH_NEWS",
-  UPDATE_RATING: "UPDATE_RATING",
-  UPDATE_VIEWERS: "UPDATE_VIEWERS",
+export const AUTHOR = {
+	NAME: "Maxim",
+	SURNAME: "Polonsky",
+	EMAIL: "mchp010nsky@gmail.com",
+	TEL: "+375(29)286-18-00",
 };
 
-export default C;
+const API_KEY = '8d8ee5d1a2b6469881df0144b6118048';
+
+export const API_URL = 'https://newsapi.org/v2/top-headlines?' +
+	'country=ru&' +
+	'pageSize=5&' +
+	`apiKey=${API_KEY}`;

@@ -1,28 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 
-import {createStore} from 'redux';
-import { newsData } from './store/reducer';
-import getNews from "./API/getNews";
-import { downloadFreshNews } from './actions';
+import storeFactory from './store/index';
+import {downloadFreshNews} from "./actions";
+import getNews from "./store/API/getNews";
 
 import './index.css';
 
-import App from './App';
+import App from './components/App';
 
-const store = createStore(newsData, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = storeFactory ();
 
-async function fillStore() {
+async function loadNews() {
   const data = await getNews();
   store.dispatch(downloadFreshNews(data));
 }
-
-fillStore();
+loadNews();
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={ store }>
     <App />
   </Provider>,
-  document.getElementById('root'));
-
+  document.getElementById('root')
+);

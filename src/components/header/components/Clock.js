@@ -26,9 +26,12 @@ export default class Clock extends React.Component {
   }
 
   render () {
+    const date = this.state.date.toLocaleDateString();
+    const time = this.state.date.toLocaleTimeString();
+
     return (
-      <span>{this.state.date.toLocaleDateString() + " / " +
-      this.state.date.toLocaleTimeString()}</span>
+      <span>{`${date} /  ${time}`
+      }</span>
     );
   }
 }

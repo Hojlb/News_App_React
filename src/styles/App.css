@@ -13,13 +13,13 @@ html, body {
 
 header, footer {
   margin: 0 auto;
-  height: 80px;
+  height: 100px;
   background-color: #313139;
   color: #fff;
 }
 
 main {
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 200px);
 }
 
 footer {

@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import LikeBtn from './button_like';
-import ViewersCounter from './viewersCounter';
+import BtnLike from './ButtonLike';
+import ViewersCounter from './ViewersCounter';
 
-const News = (props) =>{
+const NewsItm = (props) =>{
  const {newsID, viewers, onView, onLike} = props;
   return (
     <React.Fragment>
@@ -16,7 +16,7 @@ const News = (props) =>{
           <section className='news-body'>
 
           <h3 className="news-title">{props.title}</h3>
-          {/*fs - font-style*/}
+            {/*fs - font-style*/}
           </section>
         </a>
 
@@ -28,7 +28,7 @@ const News = (props) =>{
         </div>
 
         <div className='complementary'>
-          <LikeBtn like={props.like} onLike={(like)=>onLike({newsID, like})}/>
+          <BtnLike like={props.like} onLike={(like)=>onLike({newsID, like})}/>
           <ViewersCounter viewers = {props.viewers}/>
         </div>
 
@@ -37,16 +37,17 @@ const News = (props) =>{
   )
 };
 
-News.propTypes = {
+NewsItm.propTypes = {
   onLike: PropTypes.func,
   like: PropTypes.number,
 	viewers: PropTypes.number,
 };
 
-News.defaultProps = {
+NewsItm.defaultProps = {
 	like: 0,
 	viewers: 0,
+  onLike: {},
 };
 
-export default News;
+export default NewsItm;
 
