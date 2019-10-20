@@ -30,6 +30,6 @@ export const updateViewers = (count) =>
 
 export const findNews = (count) =>
 	({
-		type: ActionTypes.FIND_BY_TITLE,
+		type: ActionTypes.FILTER_BY_TITLE,
 		payload: count,
 	});

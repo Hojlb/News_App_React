@@ -5,35 +5,36 @@ import ViewersCounter from './ViewersCounter';
 
 const NewsItm = (props) =>{
  const {newsID, viewers, onView, onLike} = props;
+  const {like, source, author, title, url, publishedAt, urlToImage} = props;
   return (
-    <React.Fragment>
       <article className='news'>
-        <a href ={props.url} onClick={() => onView({newsID, viewers: viewers+1}) } target="_blank"  rel="noopener noreferrer" >
+        <a href ={url}
+           onClick={() => onView({newsID, viewers: viewers+1}) }
+           target="_blank"
+           rel="noopener noreferrer" >
           <figure>
-              <img src={props.urlToImage} className='news-image' alt='news' />
+              <img src={urlToImage} className='news-image' alt='news' />
           </figure>
 
           <section className='news-body'>
 
-          <h3 className="news-title">{props.title}</h3>
-            {/*fs - font-style*/}
+          <h3 className="news-title">{title}</h3>
           </section>
         </a>
 
         <div>
-          <address className="fs-italic">Author: {props.author ? props.author : props.source.name}</address>
+          <address className="fs-italic">Author: {author ? author : source.name}</address>
           <span className="fs-italic">Published at: {
-             new Date(props.publishedAt).toLocaleString()
+             new Date(publishedAt).toLocaleString()
           }</span>
         </div>
 
         <div className='complementary'>
-          <BtnLike like={props.like} onLike={(like)=>onLike({newsID, like})}/>
-          <ViewersCounter viewers = {props.viewers}/>
+          <BtnLike like={like} onLike={(count)=>onLike({newsID, count})}/>
+          <ViewersCounter viewers = {viewers}/>
         </div>
 
       </article>
-  </React.Fragment>
   )
 };
 

@@ -24,7 +24,7 @@ function  Main ({newsData, onLike, onView}) {
 
 export default connect(
 	state => ({
-		newsData: state.FreshNews,
+		newsData: state.FreshNews.filter(item => item.title.includes( state.FilterByTitle )),
 	}),
 	dispatch => ({
 		onLike: (newsRate) => {
