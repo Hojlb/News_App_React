@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="fix: Like button (counter) and updating news from localStorage">
-      <change afterPath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" afterDir="false" />
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/components/ButtonLike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/components/LikeBtn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/components/NewsItm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/components/NewsItm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/compareArrayOfObjects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +138,8 @@
       <workItem from="1571171932881" duration="5740000" />
       <workItem from="1571236785986" duration="5342000" />
       <workItem from="1571389813976" duration="39044000" />
-      <workItem from="1571606868600" duration="14170000" />
+      <workItem from="1571606868600" duration="15048000" />
+      <workItem from="1571688821000" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
@@ -167,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571534806800</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: Like button (counter) and updating news from localStorage">
+      <created>1571621122393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571621122393</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

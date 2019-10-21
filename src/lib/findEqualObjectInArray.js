@@ -1,4 +1,6 @@
 function findEqualObjectInArray(fresh, rotten, compareBy) {
+	if (Object.keys(rotten).length === 0) return fresh;
+
 	const res = [];
 
 	for (let i = 0; i < rotten.length; i++) {
@@ -10,10 +12,8 @@ function findEqualObjectInArray(fresh, rotten, compareBy) {
 					res.push(fresh[j]);
 			}
 		}
+			if (res.length === rotten.length) return res;
 	}
-
-		if (Object.keys(rotten).length === 0) return fresh;
-
 		return res;
 }
 
