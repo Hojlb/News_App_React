@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import BtnLike from './ButtonLike';
+import LikeBtn from './LikeBtn';
 import ViewersCounter from './ViewersCounter';
 
 const NewsItm = (props) =>{
@@ -30,7 +30,7 @@ const NewsItm = (props) =>{
         </div>
 
         <div className='complementary'>
-          <BtnLike like={like} onLike={(count)=>onLike({newsID, count})}/>
+          <LikeBtn like={like} onLike={(number)=>onLike({newsID, like: number})}/>
           <ViewersCounter viewers = {viewers}/>
         </div>
 
@@ -40,6 +40,7 @@ const NewsItm = (props) =>{
 
 NewsItm.propTypes = {
   onLike: PropTypes.func,
+  onView: PropTypes.func,
   like: PropTypes.number,
 	viewers: PropTypes.number,
 };
@@ -48,6 +49,7 @@ NewsItm.defaultProps = {
 	like: 0,
 	viewers: 0,
   onLike: {},
+  onView: {},
 };
 
 export default NewsItm;

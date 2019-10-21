@@ -1,19 +1,25 @@
 import ActionTypes from '../../actions/ActionTypes';
 //import { getRandomNumber } from '../../lib/randomNumber';
-import compareArrayOfObjects from "../../lib/compareArrayOfObjects";
+import findEqualObjectInArray from "../../lib/findEqualObjectInArray";
 //import v4 from 'uuid';
 
-export default function FreshNews (state=[], action) {
+const initialState = localStorage.news_API ?
+	JSON.parse(localStorage.news_API).FreshNews :
+	[];
+
+export default function FreshNews (state=initialState, action) {
 	switch (action.type) {
 		case ActionTypes.DOWNLOAD_FRESH_NEWS: {
-			const data = action.payload.map((item) => ({
+			const data = [...action.payload].map((item) => ({
 				...item,
 				like: 0,
-				newsID: item.publishedAt,
-				viewers: 0,
-			})).filter((item) => item.urlToImage);
+				newsID: item.title,
+				viewers: 0
+			}))
+				.filter((item) => item.urlToImage)
+				.sort((a,b)=> new Date(b.publishedAt) - new Date(a.publishedAt));
 
-			return !compareArrayOfObjects(state, data) ? state : data;
+			return findEqualObjectInArray(data, state, "newsID");
 		}
 
 		case ActionTypes.UPDATE_RATING:

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="feat: Add searcher by news title">
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="fix: Like button (counter) and updating news from localStorage">
+      <change afterPath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/ActionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/ActionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/components/ButtonLike.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/components/LikeBtn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/components/NewsItm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/components/NewsItm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/FilterByTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/FilterByTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/compareArrayOfObjects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +143,8 @@
       <workItem from="1570279022790" duration="8759000" />
       <workItem from="1571171932881" duration="5740000" />
       <workItem from="1571236785986" duration="5342000" />
-      <workItem from="1571389813976" duration="39002000" />
+      <workItem from="1571389813976" duration="39044000" />
+      <workItem from="1571606868600" duration="14170000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
@@ -157,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571528634359</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: Add searcher by news title">
+      <created>1571534806800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571534806800</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +190,8 @@
     <MESSAGE value="feat: Add count number of reads per article" />
     <MESSAGE value="feat: news save in localeStorage" />
     <MESSAGE value="feat: Add searcher by news title" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add searcher by news title" />
+    <MESSAGE value="fix: Like button (counter) and updating news from localStorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Like button (counter) and updating news from localStorage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -188,7 +199,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/../color_picker_v2/src/components/containers.js</url>
           <line>16</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
