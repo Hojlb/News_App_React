@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="">
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="refactor: compare fresh and rotten news. with tests it">
+      <change afterPath="$PROJECT_DIR$/src/__tests__/lib/changeEqualObjectInArray.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/ActionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/ActionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/changeEqualObjectInArray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +53,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -55,19 +68,21 @@
     <property name="node.js.path.for.package.standard" value="C:/Program Files/nodejs/node" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\GoogleDrive\Documents\Frontend\ReactJS\News_App_React\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GoogleDrive\Documents\Frontend\ReactJS\News_App_React\src\__tests__" />
       <recent name="D:\GoogleDrive\Documents\Frontend\ReactJS\News_App_React\src\store\reducers" />
       <recent name="D:\GoogleDrive\Documents\Frontend\ReactJS\News_App_React\src\components" />
       <recent name="D:\GoogleDrive\Documents\Frontend\ReactJS\News_App_React\src\store" />
       <recent name="D:\GoogleDrive\Documents\Frontend\ReactJS\News_App_React\src\components\header\components" />
-      <recent name="D:\GoogleDrive\Documents\Frontend\ReactJS\News_App_React\src\components\header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -82,17 +97,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
-    <configuration name="ActionTypes.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/actions/ActionTypes.js" working-dir="$PROJECT_DIR$/src">
+  <component name="RunManager" selected="Jest.FreshNews Reducer">
+    <configuration name="FreshNews Reducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" />
+      <test-names>
+        <test-name value="FreshNews Reducer" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/actions/index.js" working-dir="$PROJECT_DIR$/src/actions">
+    <configuration name="FreshNews Reducer.DOWNLOAD_FRESH_NEWS success" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" />
+      <test-names>
+        <test-name value="FreshNews Reducer" />
+        <test-name value="DOWNLOAD_FRESH_NEWS success" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="FreshNews Reducer.UPDATE_RATING success" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" />
+      <test-names>
+        <test-name value="FreshNews Reducer" />
+        <test-name value="UPDATE_RATING success" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="changeEqualObjectInArray lib" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/lib/changeEqualObjectInArray.test.js" />
+      <test-names>
+        <test-name value="changeEqualObjectInArray lib" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="changeEqualObjectInArray lib.Compare old with partially new array of objects- success" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/lib/changeEqualObjectInArray.test.js" />
+      <test-names>
+        <test-name value="changeEqualObjectInArray lib" />
+        <test-name value="Compare old with partially new array of objects- success" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.index.js" />
-        <item itemvalue="Node.js.ActionTypes.js" />
+        <item itemvalue="Jest.FreshNews Reducer" />
+        <item itemvalue="Jest.FreshNews Reducer.UPDATE_RATING success" />
+        <item itemvalue="Jest.changeEqualObjectInArray lib" />
+        <item itemvalue="Jest.FreshNews Reducer.DOWNLOAD_FRESH_NEWS success" />
+        <item itemvalue="Jest.changeEqualObjectInArray lib.Compare old with partially new array of objects- success" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +219,9 @@
       <workItem from="1571236785986" duration="5342000" />
       <workItem from="1571389813976" duration="39044000" />
       <workItem from="1571606868600" duration="15048000" />
-      <workItem from="1571688821000" duration="1738000" />
+      <workItem from="1571688821000" duration="3420000" />
+      <workItem from="1571801072197" duration="16521000" />
+      <workItem from="1571832898362" duration="7307000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
@@ -169,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571621122393</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: function ./lib/findEqualObjectInArray. Add eslintrc &amp; prittierrc">
+      <created>1571690819343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571690819343</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +282,8 @@
     <MESSAGE value="feat: news save in localeStorage" />
     <MESSAGE value="feat: Add searcher by news title" />
     <MESSAGE value="fix: Like button (counter) and updating news from localStorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Like button (counter) and updating news from localStorage" />
+    <MESSAGE value="fix: function ./lib/findEqualObjectInArray. Add eslintrc &amp; prittierrc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: function ./lib/findEqualObjectInArray. Add eslintrc &amp; prittierrc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -205,5 +295,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/News_App_React$FreshNews_Reducer.info" NAME="FreshNews Reducer Coverage Results" MODIFIED="1571841360575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/News_App_React$FreshNews_Reducer_DOWNLOAD_FRESH_NEWS_success.info" NAME="FreshNews Reducer.DOWNLOAD_FRESH_NEWS success Coverage Results" MODIFIED="1571807912643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
