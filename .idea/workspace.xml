@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="refactor: compare fresh and rotten news. with tests it">
-      <change afterPath="$PROJECT_DIR$/src/__tests__/lib/changeEqualObjectInArray.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="refactor: compare fresh and compare fresh and rotten news. Coverage by testsrotten news. with tests it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/ActionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/ActionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/findEqualObjectInArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/changeEqualObjectInArray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/FreshNews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="274" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="News_App_React" />
@@ -97,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.FreshNews Reducer">
+  <component name="RunManager" selected="Jest.changeEqualObjectInArray lib">
     <configuration name="FreshNews Reducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -168,9 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.changeEqualObjectInArray lib" />
         <item itemvalue="Jest.FreshNews Reducer" />
         <item itemvalue="Jest.FreshNews Reducer.UPDATE_RATING success" />
-        <item itemvalue="Jest.changeEqualObjectInArray lib" />
         <item itemvalue="Jest.FreshNews Reducer.DOWNLOAD_FRESH_NEWS success" />
         <item itemvalue="Jest.changeEqualObjectInArray lib.Compare old with partially new array of objects- success" />
       </list>
@@ -221,7 +213,7 @@
       <workItem from="1571606868600" duration="15048000" />
       <workItem from="1571688821000" duration="3420000" />
       <workItem from="1571801072197" duration="16521000" />
-      <workItem from="1571832898362" duration="7307000" />
+      <workItem from="1571832898362" duration="9016000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
@@ -258,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571690819343</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: compare fresh and compare fresh and rotten news. Coverage by testsrotten news. with tests it">
+      <created>1571841472937</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571841472937</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +282,8 @@
     <MESSAGE value="feat: Add searcher by news title" />
     <MESSAGE value="fix: Like button (counter) and updating news from localStorage" />
     <MESSAGE value="fix: function ./lib/findEqualObjectInArray. Add eslintrc &amp; prittierrc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: function ./lib/findEqualObjectInArray. Add eslintrc &amp; prittierrc" />
+    <MESSAGE value="refactor: compare fresh and compare fresh and rotten news. Coverage by testsrotten news. with tests it" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: compare fresh and compare fresh and rotten news. Coverage by testsrotten news. with tests it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
