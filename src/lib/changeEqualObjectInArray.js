@@ -6,15 +6,7 @@ function changeEqualObjectInArray(rotten, fresh, compareBy) {
 	for (let i = 0; i < rotten.length; i++) {
 		for (let j = 0; j < fresh.length; j++) {
 			if (rotten[i][compareBy] === fresh[j][compareBy]) {
-				res.push({
-					...fresh[j],
-					like: fresh[j].like > rotten[i].like
-						? fresh[j].like
-						: rotten[i].like,
-					viewers: fresh[j].viewers > rotten[i].viewers
-						? fresh[j].viewers
-						: rotten[i].viewers,
-				});
+				res.push(rotten[i]);
 				i++;
 			} else {
 					res.push(fresh[j]);

@@ -2,32 +2,40 @@ import { createStore, applyMiddleware, compose } from "redux";
 import reducer from './reducers';
 import changeEqualObjectInArray from "../lib/changeEqualObjectInArray";
 import { lSName } from '../constants';
+import ActionTypes from '../actions/ActionTypes';
+import addAttrInFreshNews from '../lib/addAttrInFreshNews';
 
 const logger = store => next => action => {
 
+		let result;
 		console.groupCollapsed("dispatching", action.type);
-		console.log('LOGGERS, prev state', store.getState());
+		const prevState = store.getState();
+
+		console.log('LOGGERS, prev state', prevState);
 		console.log('LOGGERS, action', action);
 
-		const result = next(action);
+		if(action.type === ActionTypes.DOWNLOAD_FRESH_NEWS) {
+			let freshNews = addAttrInFreshNews(action.payload);
+			const news = changeEqualObjectInArray(prevState.FreshNews, freshNews, "newsID");
+      result = next({type: action.type, payload: news});
 
-		console.log('LOGGERS next state', store.getState());
+      console.log('LOGGERS next state (for download)', store.getState());
+      console.groupEnd();
+      return result;
+		}
+
+		result = next(action);
+    console.log('LOGGERS next state (for update)', store.getState());
 		console.groupEnd();
 		return result;
 };
 
 const saver = store => next => action => {
-	const prevState = store.getState();
+  console.log("saver action", action);
 	const result = next(action);
-	console.log("prevState", prevState);
+	console.log("saver - next store", store.getState());
+	localStorage.news_API = JSON.stringify(store.getState());
 
-	const nextState = store.getState();
-	console.log( "nextState", nextState );
-
-	const news = changeEqualObjectInArray(prevState.FreshNews, nextState.FreshNews, "newsID");
-	console.log( "save store FreshNews:", news );
-
-	localStorage.news_API = JSON.stringify({...nextState, FreshNews: news});
 	return result;
 };
 

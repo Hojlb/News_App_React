@@ -3,13 +3,7 @@ import ActionTypes from '../../actions/ActionTypes';
 export default function FreshNews (state=[], action) {
 	switch (action.type) {
 		case ActionTypes.DOWNLOAD_FRESH_NEWS: {
-			return [...action.payload].map((item) => ({
-				...item,
-				like: 0,
-				newsID: item.title,
-				viewers: 0
-			}))
-				.sort((a,b)=> new Date(b.publishedAt) - new Date(a.publishedAt));
+			return [...action.payload].sort((a,b)=> new Date(b.publishedAt) - new Date(a.publishedAt));
 		}
 
 		case ActionTypes.UPDATE_RATING:
