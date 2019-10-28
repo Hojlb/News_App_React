@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="feat: add new tests for react component Footer &amp; LikeBtn">
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="docs: update readme">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Rk3L2fQ621dOx6UGjf5xnB5kuM" />
@@ -90,20 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.&lt;Footer /&gt; UI Component (1)">
-    <configuration name="FreshNews Reducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" />
-      <test-names>
-        <test-name value="FreshNews Reducer" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.build">
     <configuration name="&lt;Footer /&gt; UI Component (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -112,19 +105,6 @@
       <envs />
       <scope-kind value="SUITE" />
       <test-file value="$PROJECT_DIR$/src/__tests__/components/Footer.test.js" />
-      <test-names>
-        <test-name value="&lt;Footer /&gt; UI Component" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="&lt;Footer /&gt; UI Component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/components/Footer_t.js" />
       <test-names>
         <test-name value="&lt;Footer /&gt; UI Component" />
       </test-names>
@@ -157,20 +137,40 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Jest.FreshNews Reducer" />
-      <item itemvalue="Jest.&lt;Footer /&gt; UI Component" />
       <item itemvalue="Jest.&lt;Footer /&gt; UI Component (1)" />
       <item itemvalue="Jest.&lt;LikeBtn /&gt; UI Component.invokes onClick" />
       <item itemvalue="Jest.&lt;LikeBtn /&gt; UI Component" />
+      <item itemvalue="npm.deploy" />
+      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.deploy" />
         <item itemvalue="Jest.&lt;Footer /&gt; UI Component (1)" />
         <item itemvalue="Jest.&lt;LikeBtn /&gt; UI Component" />
         <item itemvalue="Jest.&lt;LikeBtn /&gt; UI Component.invokes onClick" />
-        <item itemvalue="Jest.&lt;Footer /&gt; UI Component" />
-        <item itemvalue="Jest.FreshNews Reducer" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +232,8 @@
       <workItem from="1571832898362" duration="9016000" />
       <workItem from="1571889433088" duration="2125000" />
       <workItem from="1571990444917" duration="7669000" />
-      <workItem from="1572279046090" duration="5983000" />
+      <workItem from="1572279046090" duration="7091000" />
+      <workItem from="1572295625456" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
@@ -283,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572289076481</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="docs: update readme">
+      <created>1572294472341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572294472341</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +319,8 @@
     <MESSAGE value="refactor: compare fresh and compare fresh and rotten news. Coverage by testsrotten news. with tests it" />
     <MESSAGE value="feat: add new tests for react component" />
     <MESSAGE value="feat: add new tests for react component Footer &amp; LikeBtn" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add new tests for react component Footer &amp; LikeBtn" />
+    <MESSAGE value="docs: update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

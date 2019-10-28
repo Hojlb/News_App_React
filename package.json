@@ -1,11 +1,12 @@
 {
   "name": "news_app",
-  "homepage": "http://HojLb.github.io/News_App_React",
+  "homepage": "http://Hojlb.github.io/News_App_React",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "babel-jest": "^24.9.0",
     "chai": "^4.2.0",
+    "gh-pages": "^2.1.1",
     "jQuery": "^1.7.4",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
