@@ -5,7 +5,7 @@ import ViewersCounter from './ViewersCounter';
 
 const NewsItm = (props) =>{
  const {newsID, viewers, onView, onLike} = props;
-  const {like, source, author, title, url, publishedAt, urlToImage} = props;
+  const {like, source, author, title, url, publishedAt, urlToImage,description} = props;
   return (
       <article className='news'>
         <a href ={url}
@@ -19,11 +19,12 @@ const NewsItm = (props) =>{
           <section className='news-body'>
 
           <h3 className="news-title">{title}</h3>
+            <p>{description}</p>
           </section>
         </a>
 
         <div>
-          <address className="fs-italic">Author: {author ? author : source.name}</address>
+          <address className="fs-italic">Author: {author || source.name}</address>
           <span className="fs-italic">Published at: {
              new Date(publishedAt).toLocaleString()
           }</span>

@@ -1,4 +1,5 @@
 function changeEqualObjectInArray(rotten, fresh, compareBy) {
+
 	if (rotten.length === 0) return fresh;
 
 	const res = [];
@@ -9,10 +10,10 @@ function changeEqualObjectInArray(rotten, fresh, compareBy) {
 				res.push(rotten[i]);
 				i++;
 			} else {
-					res.push(fresh[j]);
+				res.push(fresh[j]);
 			}
-		}
 			if (res.length === rotten.length) return res;
+		}
 	}
 		return res;
 }

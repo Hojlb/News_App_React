@@ -15,8 +15,8 @@ const logger = store => next => action => {
 		console.log('LOGGERS, action', action);
 
 		if(action.type === ActionTypes.DOWNLOAD_FRESH_NEWS) {
-			let freshNews = addAttrInFreshNews(action.payload);
-			const news = changeEqualObjectInArray(prevState.FreshNews, freshNews, "newsID");
+			const fresh = addAttrInFreshNews(action.payload);
+			const news = changeEqualObjectInArray(prevState.FreshNews, fresh, "newsID");
       result = next({type: action.type, payload: news});
 
       console.log('LOGGERS next state (for download)', store.getState());

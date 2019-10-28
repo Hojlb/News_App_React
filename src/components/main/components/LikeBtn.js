@@ -1,4 +1,3 @@
-//https://www.npmjs.com/package/react-icons
 import {IconContext} from 'react-icons';
 import {FaHeart} from 'react-icons/fa';
 import React from 'react';
@@ -23,9 +22,8 @@ export default class LikeBtn extends React.Component {
 		}
 	}
 
-	onRate(e) {
+	onRate() {
 		const {like, clicked} = this.state;
-		e.preventDefault();
 
 		if (clicked) {
 			this.setState(
@@ -48,9 +46,11 @@ export default class LikeBtn extends React.Component {
 	render() {
 		const {like, color} = this.state;
 		return (
-				<button className="news-like-btn complementary">
+				<button
+					className="news-like-btn complementary"
+					onClick={this.onRate}>
 					<IconContext.Provider value={{ color: `${color}`, className: "global-class-name", size: "1.5em" }}>
-						<div onClick={this.onRate}>
+						<div >
 							<FaHeart />
 						</div>
 					</IconContext.Provider>

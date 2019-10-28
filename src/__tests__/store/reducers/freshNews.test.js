@@ -22,16 +22,10 @@ describe("FreshNews Reducer", () => {
 			.toEqual([
 				{
 					title: "hello2",
-					like: 0,
-					viewers: 0,
-					newsID: "hello2",
 					publishedAt: "2002-09-22",
 				},
 				{
 					title: "hello1",
-					like: 0,
-					viewers: 0,
-					newsID: "hello1",
 					publishedAt: "2002-09-21",
 				}
 			]);
