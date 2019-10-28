@@ -1,4 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# `Hello! :)`
+
+**News App React** – как Вы могли догадаться, это приложение для просмотра новостей, выполненное на React - Redux.
+
+На написание кода ушло около 56 часов (полноценно начал писать с 20 октября). В принципе, планировал, что потрачу на всё не более 7 дней, т.к. задача не показалась сложной. В среднем уделял от 40 минут до 4 часов в день (время работы видно в принципе по коммитам на github).
+
+## `По ТЗ  `
+
+* Немного отступил от ТЗ, в плане порядка расположения title, headline, body, picture… каждой новости, т.к. проанализировав существующие проекты (BBC.com, onliner.by … ) пришел к выводу, что в новости главное картинка, и она должна быть в самом верху.
+Но, тут же столкнулся с тем, что не все новости имеют ту самую заглавныю картинку (urlToImage). Сначала даже поставил фильтр на те новости в которых данного свойства нет, но потом от него отказался.
+
+* Много времени тратил только на правильное название переменных и функций, на определение места того или иного файла в файловой системе (в конце уже было проще).
+
+* На добавление решения счетчиков лайков и просмотров потрачено примерно 3 часа (планировалось в раза 2 меньше). Счетчик не сразу корректно работал при сохранении в localeStore – исправил быстро, после добавления componentDidUpdate(). На рефакторинг потрачено минут 20.
+
+* Добавление поисковой строки отняло минут 40 (не больше).
+localeStorage – используется вместо сервера для сохранения данных о количестве лайков и просмотров новости.
+
+* Для подсчета посетителей в день использовал Яндекс Метрику. Решил, что незачем придумывать велосипед, да и другого быстрого решения я не знал, а времени ушло много с даты выдачи задания…
+
+## `В процессе написания кода столкнулся со следующими сложностями`:
+
+1. не сразу разобрался как правильно работает applyMiddleware, в принципе из-за него вся и запинка, в общей сумме потрачено около  ~12 часов на изучение/написание и рефакторинг;
+
+2. изначально занимался русскоязычными новостями. Тут возникло несколько трудностей: description не читается из response, и второе сильно отвлекают (часто подвисал на чтение новостей). В конце изменил источник новостей и добавил description;
+
+3. createStore – пришлось потратить время на наладку асинхронной работы, если мое решение нельзя назвать «костылем»…
+
+4. поначалу, не мог определиться, что взять за ID каждой новости: установил библиотеку для генерации уникального ID (пришлось отказаться от этой идеи из-за невозможности сравнивать новые со старыми новостями из localeStorage), потом перешел на дату публикации новости (но оказалось, что новости могут публиковаться асинхронно с разницей в 0 секунд), после этого было принято решение принять в качестве ID – title новости;
+
+5. с тестированием на C#, я был немного знаком еще с университета, но здесь пришлось поразбираться с тестированием redux компонентов (уделено 1 час на изучение и 1 час на написание тестов). Не стал покрывать тестами все компоненты и другие функции...;
+
+6. для большего интереса, чтобы количество лайков и просмотров не начиналось с 0, создал функцию генерации случайного числа, но потом тоже от нее отказался в пользу 0.
+
+**Что я еще понял при выполнении данного задания: что то, над чем ты думаешь 2-4 часа ночью можно за 40 мин. решить днем…**
+
+**Не совсем понимал, что я здесь должен был написать, так что не судите строго… ;)**
+
 
 ## Available Scripts
 
@@ -27,42 +64,5 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# `Max Polonsky` #
+Contacts: mchp010nsky@gmail.com

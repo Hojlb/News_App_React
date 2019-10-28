@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="feat: add new tests for react component">
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/Footer.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/mian/LikeBtn.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="feat: add new tests for react component Footer &amp; LikeBtn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/store/reducers/freshNews.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/components/LikeBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/components/LikeBtn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/components/NewsItm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/components/NewsItm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/changeEqualObjectInArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/changeEqualObjectInArray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/App.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -242,7 +232,7 @@
       <workItem from="1571832898362" duration="9016000" />
       <workItem from="1571889433088" duration="2125000" />
       <workItem from="1571990444917" duration="7669000" />
-      <workItem from="1572279046090" duration="3369000" />
+      <workItem from="1572279046090" duration="5983000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
@@ -286,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571841472937</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: add new tests for react component Footer &amp; LikeBtn">
+      <created>1572289076481</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572289076481</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +310,8 @@
     <MESSAGE value="fix: function ./lib/findEqualObjectInArray. Add eslintrc &amp; prittierrc" />
     <MESSAGE value="refactor: compare fresh and compare fresh and rotten news. Coverage by testsrotten news. with tests it" />
     <MESSAGE value="feat: add new tests for react component" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add new tests for react component" />
+    <MESSAGE value="feat: add new tests for react component Footer &amp; LikeBtn" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add new tests for react component Footer &amp; LikeBtn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
