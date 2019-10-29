@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="feat: repeat build project">
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="docs: deployed project on the Heroku">
+      <change afterPath="$PROJECT_DIR$/build/precache-manifest.d9f10fee1ce8aa8ee6596a4961237d63.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.dd1db3a2.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/css/main.dd1db3a2.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.d149d276.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/static/js/main.d149d276.chunk.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.9979f343313b7f834ee6f86e88b45050.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.8a5f2d6d.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.8a5f2d6d.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.5a5d145f.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.5a5d145f.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +247,7 @@
       <workItem from="1571990444917" duration="7669000" />
       <workItem from="1572279046090" duration="7091000" />
       <workItem from="1572295625456" duration="3449000" />
-      <workItem from="1572380156322" duration="1574000" />
+      <workItem from="1572380156322" duration="3354000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
@@ -312,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572381013825</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="docs: deployed project on the Heroku">
+      <created>1572382881296</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572382881296</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +365,8 @@
     <MESSAGE value="docs: update readme" />
     <MESSAGE value="feat: build project" />
     <MESSAGE value="feat: repeat build project" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: repeat build project" />
+    <MESSAGE value="docs: deployed project on the Heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: deployed project on the Heroku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
