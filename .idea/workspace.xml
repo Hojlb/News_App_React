@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="feat: repeat build project" />
+    <list default="true" id="f2dd3099-afa9-45e4-ade3-c8506ff47d11" name="Default" comment="feat: repeat build project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +233,7 @@
       <workItem from="1571990444917" duration="7669000" />
       <workItem from="1572279046090" duration="7091000" />
       <workItem from="1572295625456" duration="3449000" />
-      <workItem from="1572380156322" duration="1023000" />
+      <workItem from="1572380156322" duration="1574000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add count number of reads per article">
       <created>1569793627071</created>
