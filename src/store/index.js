@@ -40,8 +40,8 @@ const saver = store => next => action => {
 	return result;
 };
 
-const storeFactory = () =>
-	createStore(
+function storeFactory () {
+	return createStore(
 		combineReducers({
 			FreshNews,
 			FilterByTitle,
@@ -54,5 +54,6 @@ const storeFactory = () =>
 			(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 		)
 	);
+}
 
-export default storeFactory;
+export default storeFactory
