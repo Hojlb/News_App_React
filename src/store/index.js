@@ -1,10 +1,9 @@
-import {createStore, applyMiddleware, combineReducers} from "redux";
+import { createStore, applyMiddleware } from "redux";
 import changeEqualObjectInArray from "../lib/changeEqualObjectInArray";
 import { lSName } from '../constants';
 import ActionTypes from '../actions/ActionTypes';
 import addAttrInFreshNews from '../lib/addAttrInFreshNews';
-import FreshNews from "./reducers/FreshNews";
-import FilterByTitle from "./reducers/FilterByTitle";
+import reducer from './reducers/index';
 
 const logger = store => next => action => {
 
@@ -32,10 +31,7 @@ const saver = store => next => action => {
 
 function storeFactory () {
 	return createStore(
-		combineReducers({
-			FreshNews,
-			FilterByTitle,
-		}),
+		reducer,
 		localStorage[lSName] ?
 			JSON.parse(localStorage[lSName]) :
 			[],
