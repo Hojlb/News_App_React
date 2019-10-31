@@ -1,7 +1,6 @@
 # `Hello! :)`
 
 ## Развернутый проект на [Heroku](https://newsappreact.herokuapp.com/)
-Пробовал поделиться ссылкой - ссылка работает только у меня :(
 
 ## Развернутый проект на [Github](https://Hojlb.github.io/News_App_React)
 
